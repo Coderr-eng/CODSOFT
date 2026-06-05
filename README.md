@@ -1,4 +1,4 @@
-# CODSOFT
+# RULE BASED CHATBOT
 REPOSITORY CONTAINING CODE FOR THE TASKS
 
 A simple chatbot that responds to user inputs using **predefined rules**, **if-else statements**, and **regex pattern matching**. No machine learning — just classic NLP fundamentals.
