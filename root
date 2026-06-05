@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RuleBot — Rule-Based Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header-info">
+        <div class="avatar" aria-hidden="true">🤖</div>
+        <div>
+          <h1>RuleBot</h1>
+          <p class="status"><span class="status-dot"></span> Online · Rule-based responses</p>
+        </div>
+      </div>
+    </header>
 
+    <main class="chat-window" id="chat-window" aria-live="polite">
+      <div class="message bot">
+        <div class="bubble">
+          Hello! I'm <strong>RuleBot</strong>. I respond using predefined rules and pattern matching.
+          Try saying <em>hello</em>, <em>latest news</em>, or type <em>help</em> to see what I can do.
+        </div>
+      </div>
+    </main>
+
+    <div class="quick-replies" id="quick-replies">
+      <button type="button" data-msg="hello">👋 Hello</button>
+      <button type="button" data-msg="what time is it">🕐 Time</button>
+      <button type="button" data-msg="weather">🌤️ Weather</button>
+      <button type="button" data-msg="tell me a joke">😄 Joke</button>
+      <button type="button" data-msg="math">🔢 Math</button>
+      <button type="button" data-msg="latest news">📰 News</button>
+      <button type="button" data-msg="help">❓ Help</button>
+    </div>
+
+    <form class="input-area" id="chat-form">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Type a message..."
+        autocomplete="off"
+        aria-label="Your message"
+      />
+      <button type="submit" id="send-btn" aria-label="Send message">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>
